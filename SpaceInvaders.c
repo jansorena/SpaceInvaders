@@ -17,7 +17,7 @@ char Score[100];
 char mejoresPuntajes[6][100] = {"AAA","AAA","AAA","AAA","AAA","AAA"};
 char mejoresScore[6][100] = {"000000","000000","000000","000000","000000","000000"};
 int contadorGlobal = 0;
-int pruebaGit;
+
 // Funciones
 
 SDL_Texture* cargarTexturas(const char* imagen,SDL_Surface* superficie, SDL_Renderer* renderer);
