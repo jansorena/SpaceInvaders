@@ -17,8 +17,8 @@ char Score[100];
 char mejoresPuntajes[6][100] = {"AAA","AAA","AAA","AAA","AAA","AAA"};
 char mejoresScore[6][100] = {"000000","000000","000000","000000","000000","000000"};
 int contadorGlobal = 0;
-  
-// Funciones 
+int pruebaGit;
+// Funciones
 
 SDL_Texture* cargarTexturas(const char* imagen,SDL_Surface* superficie, SDL_Renderer* renderer);
 void posObjects(SDL_Rect* marciano, int posX, int posY,int width, int height);
@@ -454,16 +454,16 @@ void juegoPrincipal(bool* exit, int* flagMenu, SDL_Renderer* renderer, SDL_Event
           pause(&run, exit, flagMenu, renderer, event, key);
           Mix_ResumeMusic();
         }
-        // Para fines de la presentación: 
+        // Para fines de la presentación:
 
-        // Muestra la pantalla de Victoria 
+        // Muestra la pantalla de Victoria
 
         if(key[SDL_SCANCODE_V]){
           *flagMenu=6;
           run=false;
         }
         // Muestra la pantalla de Game Over
-        
+
         if(key[SDL_SCANCODE_G]){
           *flagMenu=4;
           run=false;
@@ -1999,7 +1999,7 @@ void guardarPuntajes(bool* exit, int* flagMenu, SDL_Renderer* renderer, SDL_Even
 }
 
 
-// Funciones  
+// Funciones
 
 
 SDL_Texture* cargarTexturas(const char* imagen,SDL_Surface* superficie,SDL_Renderer* renderer){
